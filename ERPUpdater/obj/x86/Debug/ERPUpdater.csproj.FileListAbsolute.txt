@@ -1,0 +1,10 @@
+D:\Projects\AcumaticaERP\Install Package\ERPUpdater\ERPUpdater\bin\Debug\ERPUpdater.exe.config
+D:\Projects\AcumaticaERP\Install Package\ERPUpdater\ERPUpdater\bin\Debug\ERPUpdater.exe
+D:\Projects\AcumaticaERP\Install Package\ERPUpdater\ERPUpdater\bin\Debug\ERPUpdater.pdb
+D:\Projects\AcumaticaERP\Install Package\ERPUpdater\ERPUpdater\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Projects\AcumaticaERP\Install Package\ERPUpdater\ERPUpdater\obj\x86\Debug\ERPUpdater.Main.resources
+D:\Projects\AcumaticaERP\Install Package\ERPUpdater\ERPUpdater\obj\x86\Debug\ERPUpdater.Properties.Resources.resources
+D:\Projects\AcumaticaERP\Install Package\ERPUpdater\ERPUpdater\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Projects\AcumaticaERP\Install Package\ERPUpdater\ERPUpdater\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Projects\AcumaticaERP\Install Package\ERPUpdater\ERPUpdater\obj\x86\Debug\ERPUpdater.exe
+D:\Projects\AcumaticaERP\Install Package\ERPUpdater\ERPUpdater\obj\x86\Debug\ERPUpdater.pdb

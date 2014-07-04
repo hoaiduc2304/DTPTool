@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  <Connection dtpConnection="server=.;Integrated Security = sspi;Initial Catalog = thegoleg;" Server="." DbName="thegoleg" />
+</Root>

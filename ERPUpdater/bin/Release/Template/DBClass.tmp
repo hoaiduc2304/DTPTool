@@ -1,0 +1,43 @@
+
+ public static int deleteItem(int {#PKID})
+    {
+      Database db = SqlHelper.CreateConnection(SqlHelper.MyConnection);
+      DbCommand dbCommand = db.GetStoredProcCommand("{#Table}_Delete");
+      db.AddInParameter(dbCommand, "{#PKID}", DbType.Int32, {#PKID});
+	  dtpCache.RemoveByPattern(SETTINGS_ALL_KEY);
+      dtpCache.RemoveByPattern(string.Format(SETTINGS_ID_KEY, {#PKID}));
+      return db.ExecuteNonQuery(dbCommand);
+    }
+public static string GetJson({#Table}Collection itemCollection)
+        {
+            StringBuilder builder = new StringBuilder();
+            if (itemCollection.Count > 0)
+            {
+                System.Text.StringBuilder sb = new System.Text.StringBuilder();
+                System.IO.StringWriter sw = new System.IO.StringWriter(sb);
+                using (JsonWriter jsonWriter = new JsonTextWriter(sw))
+                {
+                    jsonWriter.Formatting = Formatting.Indented;
+                    jsonWriter.WriteStartObject();
+                    jsonWriter.WritePropertyName("results");
+                    jsonWriter.WriteStartArray();
+                    itemCollection.ForEach(delegate({#Table} objItem)
+                                               {
+                                                   jsonWriter.WriteStartObject();
+                                                    {#JsonItem}
+                                                   jsonWriter.WriteEndObject();
+                                               });
+                    jsonWriter.WriteEndArray();
+
+                    jsonWriter.WriteEndObject();
+                    builder.AppendLine(sw.ToString());
+
+                }
+            }
+            else
+            {
+                builder.AppendLine("{'results':[{id:'-1'}]}");
+               
+            }
+            return builder.ToString();
+        }
