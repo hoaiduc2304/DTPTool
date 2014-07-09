@@ -13,6 +13,7 @@ namespace DtpFW
             string[] strPK = ClassHelper.GetTablePK(tableName);
             string TemplateScript = FileHelper.GetTextContent("PageFrm.ascx");
             TemplateScript = TemplateScript.Replace("{#Table}", "DB" + tableName);
+            TemplateScript = TemplateScript.Replace("{#PKField}", strPK[0]);
             TemplateScript = TemplateScript.Replace("{#Namespace}", @"<%@ Import Namespace=""" + strNamespace + @""" %>");
             TemplateScript = TemplateScript.Replace("{#Parameter}", AddParameter(tableName));
             TemplateScript = TemplateScript.Replace("{#paraField}", ListParamFiled(tableName,false));

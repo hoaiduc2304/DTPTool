@@ -31,7 +31,7 @@
         
         {#updatekhaibao}
         
-        if(obj{#Table}.CountryID!=0)
+        if(obj{#Table}.{#PKField}!=0)
         {
             obj{#Table} = {#Table}Manager.UpdateItem({#paraField});
         }else

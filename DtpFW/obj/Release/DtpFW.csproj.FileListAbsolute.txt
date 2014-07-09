@@ -56,3 +56,15 @@ D:\Project\Updater_25_06\Tools\Tools\DtpFW\bin\Release\Microsoft.Practices.Enter
 D:\Project\Updater_25_06\Tools\Tools\DtpFW\bin\Release\Microsoft.Practices.ObjectBuilder.dll
 D:\Project\Updater_25_06\Tools\Tools\DtpFW\obj\Release\DtpFW.dll
 D:\Project\Updater_25_06\Tools\Tools\DtpFW\obj\Release\DtpFW.pdb
+E:\project\asp.net\GitHub\DTPTool\DtpFW\bin\Release\DtpFW.dll
+E:\project\asp.net\GitHub\DTPTool\DtpFW\bin\Release\DtpFW.pdb
+E:\project\asp.net\GitHub\DTPTool\DtpFW\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\project\asp.net\GitHub\DTPTool\DtpFW\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\project\asp.net\GitHub\DTPTool\DtpFW\bin\Release\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+E:\project\asp.net\GitHub\DTPTool\DtpFW\bin\Release\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+E:\project\asp.net\GitHub\DTPTool\DtpFW\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+E:\project\asp.net\GitHub\DTPTool\DtpFW\bin\Release\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll
+E:\project\asp.net\GitHub\DTPTool\DtpFW\bin\Release\Microsoft.Practices.ObjectBuilder.dll
+E:\project\asp.net\GitHub\DTPTool\DtpFW\obj\Release\DtpFW.csprojResolveAssemblyReference.cache
+E:\project\asp.net\GitHub\DTPTool\DtpFW\obj\Release\DtpFW.dll
+E:\project\asp.net\GitHub\DTPTool\DtpFW\obj\Release\DtpFW.pdb
