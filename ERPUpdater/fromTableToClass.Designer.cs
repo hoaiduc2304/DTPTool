@@ -47,6 +47,8 @@
             this.txtAjax = new System.Windows.Forms.RichTextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.rchHTML = new System.Windows.Forms.RichTextBox();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.rchListPage = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -64,6 +66,7 @@
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -191,6 +194,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -277,6 +281,26 @@
             this.rchHTML.TabIndex = 2;
             this.rchHTML.Text = "";
             // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.rchListPage);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(550, 527);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "List Page";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // rchListPage
+            // 
+            this.rchListPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rchListPage.Location = new System.Drawing.Point(3, 3);
+            this.rchListPage.Name = "rchListPage";
+            this.rchListPage.Size = new System.Drawing.Size(544, 521);
+            this.rchListPage.TabIndex = 0;
+            this.rchListPage.Text = "";
+            // 
             // fromTableToClass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -304,6 +328,7 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -329,5 +354,7 @@
         private System.Windows.Forms.RichTextBox txtAjax;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.RichTextBox rchHTML;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.RichTextBox rchListPage;
     }
 }
