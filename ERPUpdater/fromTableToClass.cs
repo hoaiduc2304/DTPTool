@@ -59,12 +59,10 @@ namespace ERPUpdater
                 string SpScript = ClassHelper.SPBuilder(strTable);
                 string AjaxScript = AjaxRender.PageAjaxRender(strTable, strNamespace);
                 string htmlScript = HtmlPageHelper.PageHTMLRender(strTable, strNamespace);
-                string listScript = HtmlPageHelper.PageListHTMLRender(strTable, strNamespace);
                 txtScripts.Text = script;
                 sqlscript.Text = SpScript;
                 txtAjax.Text = AjaxScript;
                 rchHTML.Text = htmlScript;
-                rchListPage.Text = listScript;
             }
             
         }

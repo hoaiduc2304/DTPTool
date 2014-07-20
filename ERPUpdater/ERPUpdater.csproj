@@ -187,9 +187,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Release\Template\ListFrm.ascx">
-      <SubType>ASPXCodeBehind</SubType>
-    </Content>
     <Content Include="bin\Release\Template\PageFrm.ascx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>

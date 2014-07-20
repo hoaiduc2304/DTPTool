@@ -26,56 +26,6 @@ namespace DtpFW
             sp.AppendLine(TemplateScript);
             return sp.ToString();
         }
-        public static string PageListHTMLRender(string tableName, string strNamespace)
-        {
-            StringBuilder sp = new StringBuilder();
-            string[] strPK = ClassHelper.GetTablePK(tableName);
-            string TemplateScript = FileHelper.GetTextContent("ListFrm.ascx");
-            TemplateScript = TemplateScript.Replace("{#Table}", "DB" + tableName);
-            TemplateScript = TemplateScript.Replace("{#Namespace}", @"<%@ Import Namespace=""" + strNamespace + @""" %>");
-            TemplateScript = TemplateScript.Replace("{#PKField}", strPK[0]);
-            TemplateScript = TemplateScript.Replace("{#ListHeader}", ListHeaderField(tableName));
-            TemplateScript = TemplateScript.Replace("{#ListContent}", ListContentField(tableName));
-            sp.AppendLine(TemplateScript);
-            return sp.ToString();
-        }
-        private static string ListContentField(string tableName)
-        {
-            StringBuilder sp = new StringBuilder();
-            string[] strPK = ClassHelper.GetTablePK(tableName);
-            StringBuilder strParameter = new StringBuilder();
-            DBClassCollection objLists = ClassHelper.GetDbClass(tableName);
-            strParameter.AppendLine("<tr>");
-            for (int i = 0; i < objLists.Count; i++)
-            {
-                DBClass objItem = objLists[i];
-
-                strParameter.AppendLine(@"<td><%=objItem."+objItem.ColName    +" %></td>");
-
-
-            }
-            strParameter.AppendLine("</tr>");
-            sp.Append(strParameter);
-            return sp.ToString();
-        }
-        private static string ListHeaderField(string tableName)
-        {
-            StringBuilder sp = new StringBuilder();
-            string[] strPK = ClassHelper.GetTablePK(tableName);
-            StringBuilder strParameter = new StringBuilder();
-            DBClassCollection objLists = ClassHelper.GetDbClass(tableName);
-            for (int i = 0; i < objLists.Count; i++)
-            {
-                DBClass objItem = objLists[i];
-
-                strParameter.AppendLine(@"<td><%=ngonngu(""gl."+objItem.ColName+@""")%></td>");
-
-
-            }
-
-            sp.Append(strParameter);
-            return sp.ToString();
-        }
         public static string KhaiBaofield(string tableName)
         {
             StringBuilder sp = new StringBuilder();
@@ -92,7 +42,7 @@ namespace DtpFW
                                     FieldValue = objDB" + tableName + @"." + objItem.ColName + @".ToString(),
                                     FieldID = ""dtp" + objItem.ColName + @""",
                                     FieldName = ""dtp" + objItem.ColName + @""",
-                                    LabelName=ngonngu(""gl." + objItem.ColName + @""")})%>");
+                                    LabelName=ngonngu(""gl." + objItem.ColName + @"objItem.ColName"")})%>");
                 }
 
             }
